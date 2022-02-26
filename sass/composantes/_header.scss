@@ -20,6 +20,22 @@
       margin-left: auto;
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &__icones{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      svg{
+        display: flex;
+        color: white;
+        justify-content: center;
+        align-items: center;
+      }
+      svg:hover{
+        color: blue;
+      }
       &__menu{
         display: flex;
         flex-direction: row;

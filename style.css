@@ -478,6 +478,25 @@ COMPOSANTES
   margin-left: auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.util__icones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.util svg {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.util svg:hover {
+  color: blue;
 }
 
 .util__menu {
