@@ -28,6 +28,7 @@ function cidw_4w4_filtre_choix_menu($obj_menu){
     }
     return $obj_menu;
 }
-add_filter("wp_nav_menu_objects","cidw_4w4_filtre_choix_menu")
-//s
+add_filter("wp_nav_menu_objects","cidw_4w4_filtre_choix_menu");;
+//ajouter un add_theme_support('posts-thumbnail)
+add_theme_support('post-thumbnails');
 ?>

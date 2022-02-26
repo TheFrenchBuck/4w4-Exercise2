@@ -1,6 +1,15 @@
 @charset "UTF-8";
 /*
 theme name: ZacharyArsenaultlab4
+Author URI: https://github.com ...  votre adresse github ici
+Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. 
+Chacune des étapes de développement se retrouvera sur 
+gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: cidw-4w4
+
 */
 /* ---------------------------------------------------------
 VARIABLES
@@ -448,16 +457,31 @@ COMPOSANTES
   background-color: #363c59;
   color: #fa9292;
   padding-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.site__header .header__titre {
+.header__titre {
   font-size: 3em;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-.site__header .header__desc {
+.header__desc {
   font-size: 1.5rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-left: 5%;
+}
+
+.util {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.util__menu {
+  display: flex;
+  flex-direction: row;
 }
 
 #chk-burger {
@@ -481,7 +505,11 @@ COMPOSANTES
   }
 }
 
-#chk-burger:checked ~ .menu-principal-container {
+#burger svg {
+  color: #97498a;
+}
+
+#chk-burger:checked ~ .menu-menu-1-container {
   display: block;
   animation-duration: 1s;
   animation-name: glisser;
@@ -491,7 +519,7 @@ COMPOSANTES
   display: block;
 }
 
-.menu-principal-container {
+.menu-menu-1-container {
   display: none;
   overflow: hidden;
   padding: 20px 0 0;
@@ -499,7 +527,7 @@ COMPOSANTES
 }
 
 @media screen and (min-width: 800px) {
-  .menu-principal-container {
+  .menu-menu-1-container {
     display: block;
   }
 }
@@ -507,11 +535,11 @@ COMPOSANTES
 @keyframes glisser {
   from {
     height: 0;
-    transform: translateX(-200px);
+    transform: translateX(-200px) scale(0);
   }
   to {
     height: 100%;
-    transform: translateX(0);
+    transform: translateX(0) scale(1);
   }
 }
 
@@ -535,11 +563,14 @@ COMPOSANTES
 }
 
 .menu-item a:hover {
-  background-color: #d1d4ff;
+  background-color: #5358a2;
   text-decoration: none;
 }
 
 .site__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   background-color: #29282f;
   padding: 15px;
@@ -547,14 +578,19 @@ COMPOSANTES
 
 .site__footer__info1 {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .site__footer__info1 .elem {
   width: 25%;
   border: 1px solid #fff;
-  margin: 1%;
+  margin: 0;
+  display: flex;
 }
 
 .site__footer__info1 .elem__h2 {
@@ -562,11 +598,85 @@ COMPOSANTES
 }
 
 .site__footer__info1 .elem__h3 {
+  text-align: center;
   background-color: #c767b7;
+  width: 20vw;
 }
 
 .site__footer__info1 .elem__p {
   background-color: #97498a;
+}
+
+.site__footer__info2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site__footer__info2 .elem {
+  width: 25%;
+  border: 1px solid #fff;
+  margin: 1%;
+}
+
+.site__footer__info3 {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  padding: auto;
+  margin: 0;
+  background-color: #97498a;
+}
+
+.site__footer__info3 .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #97498a;
+  padding: 0;
+}
+
+.site__footer__info3 .left .elem {
+  border: 1px solid #fff;
+  margin: 1%;
+}
+
+.site__footer__info3 .left .elem__p {
+  margin: 2%;
+}
+
+.site__footer__info3 .millieu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #97498a;
+  padding: 0;
+}
+
+.site__footer__info3 .millieu .elem {
+  border: 1px solid #fff;
+  margin: 1%;
+}
+
+.site__footer__info3 .millieu .elem__p {
+  margin: 2%;
+}
+
+.site__footer__info3 .right {
+  background-color: #97498a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.site__footer__info3 .right .elem {
+  border: 1px solid #fff;
+  margin: 1%;
+}
+
+.site__footer__info3 .right .elem__p {
+  margin: 2%;
 }
 
 .site__footer__menu__ul {
@@ -597,6 +707,30 @@ COMPOSANTES
   color: #19e123;
 }
 
+.erreur-404 {
+  background-color: #d94a12;
+}
+
+.erreur-404 h1 {
+  font-size: 5rem;
+}
+
+.erreur-404 h2 {
+  font-size: 3rem;
+}
+
+.recherche {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-bottom: 5%;
+  margin-top: auto;
+}
+
+.cours section {
+  display: flex;
+}
+
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
@@ -621,6 +755,7 @@ theme name: Lab 2 Lemieux Florence
 .site__main {
   grid-area: main;
   background-color: #a7ecdb;
+  padding: 4%;
 }
 
 .site__footer {

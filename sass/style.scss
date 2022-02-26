@@ -1,5 +1,14 @@
 /*
 theme name: ZacharyArsenaultlab4
+Author URI: https://github.com ...  votre adresse github ici
+Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. 
+Chacune des étapes de développement se retrouvera sur 
+gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: cidw-4w4
+
 */
 /* ---------------------------------------------------------
 VARIABLES
@@ -7,6 +16,7 @@ VARIABLES
 @import "variables/couleurs";
 @import "variables/typo";
 @import "variables/structure";
+
 
 /* ---------------------------------------------------------
 INITIALISATION
@@ -26,6 +36,9 @@ COMPOSANTES
 @import "composantes/header";
 @import "composantes/navigation";
 @import "composantes/footer";
+@import "composantes/erreur_404";
+@import "composantes/recherche";
+@import "composantes/single-post";
 
 /* ---------------------------------------------------------
 LAYOUT

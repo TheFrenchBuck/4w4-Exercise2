@@ -1,27 +1,114 @@
 .site__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
     font-family: $font__titre;
     background-color: $color__background-footer;
     padding: 15px;
     &__info1{
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
       align-items: center;
+      margin: 0;
+      padding: 0;
+      
       .elem{ //.site__footer__imfo1 .elem
         width: 25%;
         border: 1px solid #fff ;
-        margin: 1%;
+        margin: 0;
+        display: flex;
+        
 
         &__h2{ //.site__footer__imfo1 .elem__h2
-        background-color: rgba($color: #5e2454, $alpha: 1.0);
-        }
-        &__h3{ //.site__footer__imfo1 .elem__h3         
+          background-color: rgba($color: #5e2454, $alpha: 1.0);
+          }
+        &__h3{ //.site__footer__imfo1 .elem__h3        
+          text-align: center; 
         background-color: rgba($color: #c767b7, $alpha: 1.0);
+        width: 20vw;
         }
         &__p{ //.site__footer__imfo1 .elem__p         
         background-color: rgba($color: #97498a, $alpha: 1.0);
         }
       }
     }
+    &__info2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .elem{
+        width: 25%;
+        border: 1px solid #fff ;
+        margin: 1%;
+      
+        
+      }
+    }
+    
+      &__info3{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        // align-items: flex-start;
+        padding: auto;
+        margin: 0;
+        background-color: rgba($color: #97498a, $alpha: 1.0);
+
+        
+     
+        .left{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          background-color: rgba($color: #97498a, $alpha: 1.0);
+          padding: 0;
+
+          .elem{
+           
+            border: 1px solid #fff ;
+            margin: 1%;
+          
+        &__p{ //.site__footer__imfo3 .elem__p         
+          margin: 2%;
+        }}
+      }
+
+      .millieu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba($color: #97498a, $alpha: 1.0);
+        padding: 0;
+
+        .elem{
+         
+          border: 1px solid #fff ;
+          margin: 1%;
+        
+      &__p{ //.site__footer__imfo3 .elem__p         
+        margin: 2%;
+      }}
+    }
+      .right{
+        background-color: rgba($color: #97498a, $alpha: 1.0);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .elem{
+          
+          border: 1px solid #fff ;
+          margin: 1%;
+        &__p{ //.site__footer__imfo3 .elem__p         
+          margin: 2%;
+        }
+      }
+      }
+    }
+
+    
 
     &__menu{ // .site__footer__menu
 

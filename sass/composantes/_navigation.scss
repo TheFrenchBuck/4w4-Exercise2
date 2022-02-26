@@ -73,10 +73,10 @@
     }
 
     svg{
-        //color: $color__texte__icones;
+        color: $color__texte__icones;
     }
 }
-#chk-burger:checked ~ .menu-principal-container{
+#chk-burger:checked ~ .menu-menu-1-container{
     display: block;
     animation-duration: 1s;
     animation-name: glisser;
@@ -87,7 +87,7 @@
     
 }
 
-.menu-principal-container{
+.menu-menu-1-container{
     display: none;
     overflow: hidden;
     padding: 20px 0 0;
@@ -99,15 +99,17 @@
 
 @keyframes glisser {
     from {
+        
         height: 0;
-        transform: translateX(-200px);
+        transform: translateX(-200px) scale(0);
     }
 
     to {
         height: 100%;
-        transform: translateX(0);
+        transform: translateX(0) scale(1);
     }
 }
+
 
 .menu{
     padding: 0;
