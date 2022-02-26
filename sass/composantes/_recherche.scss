@@ -4,11 +4,15 @@
     justify-items: center;
     margin-bottom: 5%;
     margin-top: auto;
+    height: 2rem;
     
     &__text{
 
     }
     &__submit{
+        float: right;
+        right: 35px;
+        position: relative;
         svg{
 
         }

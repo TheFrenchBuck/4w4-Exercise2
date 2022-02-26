@@ -478,25 +478,19 @@ COMPOSANTES
   margin-left: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
 }
 
 .util__icones {
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-
-.util svg {
-  display: flex;
-  color: white;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  padding-right: 20px;
 }
 
 .util svg:hover {
-  color: blue;
+  color: peachpuff;
 }
 
 .util__menu {
@@ -745,6 +739,13 @@ COMPOSANTES
   justify-items: center;
   margin-bottom: 5%;
   margin-top: auto;
+  height: 2rem;
+}
+
+.recherche__submit {
+  float: right;
+  right: 35px;
+  position: relative;
 }
 
 .cours section {
